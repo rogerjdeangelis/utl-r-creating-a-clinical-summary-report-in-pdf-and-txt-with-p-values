@@ -1,0 +1,22 @@
+                       A             B
+                            1            1               2
+Characteristic       N = 24       N = 26     Statistic p-value
+                                                               3
+AGE                42 (34, 53) 48 (34, 56)      294          0.7
+                                                               4
+GRADE                                          0.290         0.9
+
+     1               7 (29%)      9 (35%)
+
+     2               9 (38%)     10 (38%)
+
+     3               8 (33%)      7 (27%)
+1
+    Median (Q1, Q3); n (%)
+2
+    Wilcoxon rank sum test; Pearson’s Chi-squared test
+3
+    Wilcoxon rank sum test
+4
+    Pearson’s Chi-squared test
+
