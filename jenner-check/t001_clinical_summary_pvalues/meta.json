@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_clinical_summary_pvalues",
+  "source_file": "utl-r-creating-a-clinical-summary-report-in-pdf-and-txt-with-p-values.sas",
+  "source_blob_sha": "d5dae221483b1bb4628c1aaebe1a5cd2fb537738",
+  "source_commit": "0df0fbbf0d9d2ba188e73b3ccaa8b7cb8386cae1",
+  "notes": "Repo's core SAS is a single DATA step (sd1.have) reading 25 CARDS4 lines of a two-arm (TRT A/B) clinical trial with AGE/MARKER/STAGE/GRADE/RESPONSE/DEATH/TTDEATH; the rest of the .sas file is R code shipped through an %utl_rbeginx/%utl_rendx macro wrapper (not SAS) plus undefined utility macros (%stop_submission, %utlfkil, %utl_pdftotext) with no definitions in the repo. Bundle copies the DATA step verbatim (same CARDS4 rows, same column layout), redirects the hardcoded libname sd1 'd:/sd1' to WORK via %sysfunc(pathname(work)), and adds PROC MEANS/NPAR1WAY/FREQ as the direct SAS-native equivalent of the R gtsummary tbl_summary()+add_p() comparison the repo documents (AGE via Wilcoxon rank-sum, GRADE via Pearson chi-square) against the same TRT grouping and the same fields the repo's own README table names."
+}
