@@ -1,0 +1,73 @@
+                                  Descriptive summary by TRT arm (input, as sd1.have)
+
+                                                  The MEANS Procedure
+
+                                                Analysis Variable : AGE
+
+        TRT               N Obs           Mean        Std Dev         Median  Lower Quartile  Upper Quartile
+        ----------------------------------------------------------------------------------------------------
+        A                    24     44.6666667     13.3112135     42.0000000      34.0000000      53.0000000
+        B                    26     44.7692308     17.1844294     48.0000000      34.0000000      56.0000000
+        ----------------------------------------------------------------------------------------------------
+
+                         AGE by TRT -- Wilcoxon rank-sum test (matches repo's add_p() column 3)
+
+                              The NPAR1WAY Procedure                              
+                   Wilcoxon Scores (Rank Sums) for Variable AGE                   
+
+TRT              N  Sum of Scores  Expected Under H0  Std Dev Under H0  Mean Score
+--------  --------  -------------  -----------------  ----------------  ----------
+A               24       594.0000           612.0000           51.4400     24.7500
+B               26       681.0000           663.0000           51.4400     26.1900
+
+   Kruskal-Wallis Test   
+
+Statistic           Value
+---------------  --------
+Chi-Square         0.1224
+DF                      1
+Pr > Chi-Square    0.7264
+P Value            0.7264
+
+  Wilcoxon Two-Sample Test  
+
+Statistic              Value
+------------------  --------
+S                   594.0000
+Expected Under H0   612.0000
+Std Dev Under H0     51.4431
+Z                    -0.3499
+Two-Sided Pr > |Z|    0.7264
+P Value               0.7264
+
+                      GRADE by TRT -- Pearson chi-square test (matches repo's add_p() column 2/4)
+
+                                                   The FREQ Procedure
+
+Table of TRT by GRADE
+
+TRT |         1 |         2 |         3 |      Total
+----+-----------+-----------+-----------+-----------
+A   |         7 |         9 |         8 |         24
+    |     14.00 |     18.00 |     16.00 |      48.00
+    |     29.17 |     37.50 |     33.33 |     100.00
+    |     43.75 |     47.37 |     53.33 |      48.00
+----+-----------+-----------+-----------+-----------
+B   |         9 |        10 |         7 |         26
+    |     18.00 |     20.00 |     14.00 |      52.00
+    |     34.62 |     38.46 |     26.92 |     100.00
+    |     56.25 |     52.63 |     46.67 |      52.00
+----+-----------+-----------+-----------+-----------
+Total |        16 |        19 |        15 |         50
+
+Statistics for Table of TRT by GRADE
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                2 0.2898       0.8651
+Likelihood Ratio Chi-Square               2 0.2900       0.8650
+
+Cramer's V                           0.0761
+Contingency Coefficient              0.0759
+
+

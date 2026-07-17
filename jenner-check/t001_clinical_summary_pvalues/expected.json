@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-17T02:30:00Z",
+  "_captured_run_id": "r_7f0b472085cb4c32b589385aef8dbbc9",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Read 50 rows from DATALINES.",
+    "NOTE: Wrote sd1.have (50 rows, 8 columns).",
+    "NOTE: PROC MEANS",
+    "NOTE: PROC NPAR1WAY data=sd1.have",
+    "NOTE: PROC FREQ"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
